@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+<meta name="description" content="Basic bookstore website using sematic html tags">
+    <title>Galaxy BookStore</title>
+  </head>
+  <body>
+    <header>
+        <h1>Galaxy BookStore</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <h2>About us</h2>
+            <p>We are dedicated to selling and making good books available at affordable prices</p>
+        </section>
+        <!--List of the books we have as of now -->
+        <ul>
+            <li>To infinity and beyond</li>
+            <li>Celestine Prophecy</li>
+            <li>Origin of time</li>
+            <li>Tenth Insight (The Celestine Prophecy Book 2)</li>
+            <li>Mazerunner</li>
+            <li>Emotional Intelligence </li>
+        </ul>
+        <!--Books and their description-->
+        <section class="books-container" id="books">
+            <h2>Our Bestseller Books</h2>
+            <button type="button">Download</button>
+            <article>
+                <h3>To infinity and beyond - Neil deGrasse Tyson (Author), Lindsey Nyx Walker</h3>
+                <p>
+                    The book begins as we leave Earth, encountering new truths about our planet’s atmosphere,
+                    the nature of sunlight, and the many missions that have demystified our galactic neighbors.
+                    But the farther out we travel, the weirder things get. What’s a void and what’s a vacuum?
+                    How can light be a wave and a particle at the same time? When we finally arrive in the blackness
+                    of outer space, Tyson takes on the spookiest phenomena of the cosmos: parallel worlds, black holes,
+                    time travel, and more.
+                </p>
+                <img src="/assets/toinfintyandbeyond.png" alt=" to infinity and beyond book cover" width="150"/>
+            </article>
+            <article>
+                <h3>On the Origin of Time: Stephen Hawking's Final Theory Hardcover – by Thomas Hertog (Author)</h3>
+                <p>
+                    NEW YORK TIMES BESTSELLER • Stephen Hawking’s closest collaborator offers the intellectual superstar’s
+                    final thoughts on the cosmos, a dramatic revision of the theory he put forward in A Brief History of
+                    Time.
+                </p>
+                <img src="/assets/originoftime.png" alt=" cover of On the Origin of Time" width="150"/>
+            </article>
+        </section>
+        <section class="downloads-container" id="downloads">
+            <h2>Your Downloads</h2>
+            <article>
+                <h3>The Celestine Prophecy - James Redfield</h3>
+                <p>
+                    In the rain forests of Peru, an ancient manuscript has been discovered.
+                    Within its pages are 9 key insights into life itself -- insights each
+                    human being is predicted to grasp sequentially; one insight, then another,
+                    as we move toward a completely spiritual culture on Earth.
+                    Drawing on ancient wisdom, it tells you how to make connections among the
+                    events happening in your life right now and lets you see what is going to
+                    happen to you in the years to come. The story it tells is a gripping one of
+                    adventure and discovery, but it is also a guidebook that has the power to
+                    crystallize your perceptions of why you are where you are in life and to direct
+                    your steps with a new energy and optimism as you head into tomorrow.
+                </p>
+                <img src="/assets/celestineprophecy.png" alt="The Celestine Prophecy cover" />
+            </article>
+            <article>
+                <h3>Tenth Insight: Holding the Vision (The Celestine Prophecy Book 2)- James Redfield</h3>
+                <p>
+                    The exciting sequel to The Celestine Prophecy transports you through portals into other dimensions
+                    . . . to memories of other centuries . . . to the moment before our conception . . . to the passage
+                    of death and the life review we must all face . . . and to the love-filled Afterlife. As you grasp
+                    the Tenth Insight, your understanding will expand to include a sense of the special mission that we
+                    all share. And you will begin to answer, as never before, the unspoken questions in every human heart:
+                    Why are we here? What are we to do? Where are we going?
+                </p>
+                <img src="/assets/tenthinsight.png" alt="Tenth Insight: Holding the Vision (The Celestine Prophecy Book 2)" width="150"/>
+            </article>
+        </section>
+
+        <!--List of books organised in a Table-->
+        <table style="border: 2px solid; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid;">Name</th>
+                <th style="border: 1px solid;">Genre</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid;">To Infinity and Beyond</td>
+                <td style="border: 1px solid;">Science</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid;">The Origin of Time </td>
+                <td style="border: 1px solid;">Science</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid;">Celestine Prophecy</td>
+                <td style="border: 1px solid;">Fiction</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid;">Maze Runner</td>
+                <td style="border: 1px solid;">Fiction</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid;">Emotional Intelligence</td>
+                <td style="border: 1px solid;">Self-Help</td>
+            </tr>
+        </table>
+    </main>
+    <!--Book purchasing form-->
+    <section>
+        <h3>Purchase a Book</h3>
+        <form style="border: 1px solid">
+            <label for="fname">Full name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Full Name" required><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Email"><br>
+            <label for="address">Address</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Address"><br>
+            <label for="nameofbook">Name of Book</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <p>Genre:</p>
+            <input type="radio" id="science" name="Genre" value="Genre">
+            <label for="science">Science</label><br>
+            <input type="radio" id="fiction" name="Genre" value="Genre">
+            <label for="science">Fiction</label><br>
+            <input type="radio" id="science" name="Genre" value="Genre">
+            <label for="science">Science</label><br>
+            <label for="fname">Tell us more</label><br>
+            <textarea id="bio" name="bio" placeholder="Tell us more" rows="4" cols="40"></textarea><br>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Galaxy BookStore. All rights Reserved</p>
+    </footer>
+  </body>
+</html>
